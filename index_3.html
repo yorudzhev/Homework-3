@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        const a = Number(prompt(`Please enter a number`));
+
+        const x = prompt(`Please enter an operator`);
+
+        const b = Number(prompt(`Please enter another number`));
+
+        if (isNaN(a) || isNaN(b)) {
+            alert(`Input is not a number`);
+        }
+
+        if (x === '/') {
+            alert(`Ваш результат: ${a/b}`);
+        }   else if (x === '+') {
+            alert(`Ваш результат: ${a+b}`);
+        }   else if (x === '-') {
+            alert(`Ваш результат: ${a-b}`);
+        }   else if (x === '*') {
+            alert (`Ваш результат ${a*b}`)
+        }   else {alert('Такой операции не существует');}
+
+    </script>
+
+
+</body>
+</html>
